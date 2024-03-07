@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" attributeFormDefault="unqualified">
+	<xs:element name="Family">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="Grandfather">
+					<xs:complexType mixed="true">
+						<xs:sequence>
+							<xs:element name="Father">
+								<xs:complexType mixed="true">
+									<xs:sequence>
+										<xs:element name="Mother" type="xs:string">
+										</xs:element>
+										<xs:element name="Daughter">
+											<xs:complexType>
+												<xs:simpleContent>
+													<xs:extension base="xs:string">
+														<xs:attribute name="age" type="xs:integer"/>
+														<xs:attribute name="job" type="xs:string"/>
+													</xs:extension>
+												</xs:simpleContent>
+											</xs:complexType>
+										</xs:element>
+										<xs:element name="Son">
+											<xs:complexType>
+												<xs:simpleContent>
+													<xs:extension base="xs:string">
+														<xs:attribute name="age" type="xs:integer"/>
+														<xs:attribute name="sport" type="xs:string"/>
+													</xs:extension>
+												</xs:simpleContent>
+											</xs:complexType>
+										</xs:element>
+									</xs:sequence>
+									<xs:attribute name="job" type="xs:string"/>
+								</xs:complexType>
+							</xs:element>
+							<xs:element name="Uncle" minOccurs="0" maxOccurs="unbounded" type="xs:string"/>
+							<xs:element name="Aunt">
+								<xs:complexType>
+									<xs:simpleContent>
+										<xs:extension base="xs:string">
+											<xs:attribute name="sons" type="xs:integer"/>
+										</xs:extension>
+									</xs:simpleContent>
+								</xs:complexType>
+							</xs:element>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE Family SYSTEM "D:\XML-ITI\Day1\Lab1\Family\family.dtd">
+<Family>
+	<Grandfather>
+		Mohamed
+		<Father job="Engineer">
+			Ahmed
+			<Mother>Mona</Mother>
+			<Daughter age="24" job="Engineer">Aya</Daughter>
+			<Son age="20" sport="football">Ebrahim</Son>
+		</Father>
+		<Uncle>Khalid</Uncle>
+		<Uncle>Saad</Uncle>
+		<Aunt sons="2">Ghada</Aunt>
+	</Grandfather>
+</Family>

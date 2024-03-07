@@ -1,0 +1,16 @@
+
+TITLE{
+	color:red;
+	padding:10px;
+	font-wight: bold;
+}
+
+ARTIST{
+	color: blue;
+	font-weight: bold;
+}
+
+COUNTRY, COMPANY, PRICE, YEAR {
+	display: block;
+	margin-left: 20px;
+}
